@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Graphlab by azinazadi</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/azinazadi/GraphLab">Fork Me on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Graphlab</h1>
+            <h2>The Graph Theory Software</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/azinazadi/GraphLab/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/azinazadi/GraphLab/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+      <span class="banner-fix"></span>
+
+      <section id="main_content">
+        <p><img src="https://github.com/azinazadi/GraphLab/raw/master/presentation/peterson.png" alt="Preview"></p>
+
+<h1>youtube demo</h1>
+
+<p>see this <a href="http://www.youtube.com/watch?v=0gblxDCNsmY">video</a></p>
+
+<h1>GraphLab</h1>
+
+<p>GraphLab is a software framework to work on graphs and social networks. which consists of a graph library and a graph GUI. The library part is a framework designed for developing graph theory algorithms and testing graph conjectures. the GUI part aimed to draw and visualize graphs and running algorithms on them. The program is based on plug-ins and extensions and provides a user friendly application platform to create scientific applications.</p>
+
+<p>it runs under any platform (based on java).</p>
+
+<h1>RUN</h1>
+
+<p>execute <code>run.bat</code> (windows), or <code>run.sh</code> (linux/mac).</p>
+
+<p>manually:</p>
+
+<blockquote>
+<p>java -jar graphlab-main.jar</p>
+</blockquote>
+
+<h1>DEVELOP</h1>
+
+<p>for working on the source, </p>
+
+<ol>
+<li>make your changes</li>
+<li>run make.sh (or type in terminal <code>./make.sh</code>)</li>
+<li>it will compile your changes and run the application.</li>
+</ol><p>manually:</p>
+
+<ol>
+<li>open terminal</li>
+<li><code>cd src/scripts</code></li>
+<li>
+<code>ant</code>. this will build the application for you in the binary folder.</li>
+<li>for seeing your changes do the steps described for "run"</li>
+</ol><p>note that you should have <a href="http://ant.apache.org/">appache ant</a> installed.</p>
+
+<h1>write a graph algorithm</h1>
+
+<p>go change this file: <a href="https://github.com/azinazadi/GraphLab/blob/master/src/graphlab/extensions/algorithms/SampleAlgorithm.java">SampleAlgorithm.java</a>.
+you can make also reports, generators, file formats and actions.</p>
+
+<h1>what can you do with graphlab</h1>
+
+<ul>
+<li>draw your graph with mouse or using predefined graphs (under graph &gt; generate), like trees, complete graphs, stars, generalized peterson and ...</li>
+<li>get information about your graphs (under graph &gt; reports menu), like num of connected components, chromatic number, independence number, girth size, num of triangles and ...</li>
+<li>run algorithms step by step on your graph and see how they work. this is very usefull for teaching graph algorithms. you can pause, and it shows the current state of algorithm by coloring edges and vertices.</li>
+<li>visualize your graphs. you made a social network from your database and want to represent it in a meaningfull way? use the visualizations</li>
+<li><p>present your graphs in your papers, websites or reports. GraphLab has a wide range of options to draw graphs, having different colors for edges and vertices. different borders and fonts and sizes and ... when you finish drawing your graph, you can save to a image file or even to a Latex document to put in your report. then you can use latexcad app, to further refine your graph.</p></li>
+<li><p>you can make new graph generators, graph reports, file types, actions, algorithms by writing extensions. extensions provide a gateway to add new functionalities as simple as putting a file to extensions directory. you can write them using Java and Matlab. moreover you can write new extensions using any programming language that supports <a href="http://redis.io/clients">redis</a> which includes almost any wellknown programming language. for more samples take a look at extensions directory</p></li>
+</ul><h1>need help?</h1>
+
+<p>more docs will come soon. if you have any questions just post it in the issues and i will write you back as soon as possible.</p>
+
+<h1>CONTRIBUTE</h1>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol><p>have fun!</p>
+
+<hr><h3>credits</h3>
+
+<p>GraphLab is developed in Sharif university of technology. it is under GPL license.</p>
+
+<p>project supervisor:
+Dr. Amir Daneshgar</p>
+
+<p>contributors:
+Azin Azadi,
+Ruzbeh Ebrahimi,
+Omid Aladini,
+Reza Mohammadi,
+Mohammad Ali Rostami,
+Mina Naghshnejad,
+Ali Ershadi,
+Soroosh Sabet</p>
+
+<p>With Thanks to: Soheil Siadatnejad</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/azinazadi">azinazadi</a> can be found on <a href="https://github.com/azinazadi/GraphLab">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
